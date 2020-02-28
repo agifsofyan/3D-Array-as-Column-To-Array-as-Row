@@ -1,0 +1,89 @@
+Feed it an array of columns like this:
+--------------------------------------
+
+array:2 [
+  0 => array:2 [
+    "periode" => array:5 [
+      0 => "Apr'16A"
+      1 => "Mei'16A"
+      2 => "Jun'16A"
+      3 => "Jul'16A"
+      4 => "Ags'16A"
+    ]
+    "frek_debet" => array:5 [
+      0 => "A1"
+      1 => "A24"
+      2 => "A31"
+      3 => "A24"
+      4 => "A1"
+    ]
+  ]
+  1 => array:2 [
+    "periode" => array:5 [
+      0 => "Apr'16B"
+      1 => "Mei'16B"
+      2 => "Jun'16B"
+      3 => "Jul'16B"
+      4 => "Ags'16B"
+    ]
+    "frek_debet" => array:5 [
+      0 => "B1"
+      1 => "B24"
+      2 => "B31"
+      3 => "B24"
+      4 => "B1"
+    ]
+  ]
+]
+
+
+
+Returns an array of rows with indexed fields like this:
+-------------------------------------------------------
+
+array:2 [
+  0 => array:7 [
+    0 => array:2 [
+      "periode" => "Apr'16A"
+      "frek_debet" => "A1"
+    ]
+    1 => array:2 [
+      "periode" => "Mei'16A"
+      "frek_debet" => "A24"
+    ]
+    2 => array:2 [
+      "periode" => "Jun'16A"
+      "frek_debet" => "A31"
+    ]
+    3 => array:2 [
+      "periode" => "Jul'16A"
+      "frek_debet" => "A24"
+    ]
+    4 => array:2 [
+      "periode" => "Ags'16A"
+      "frek_debet" => "A1"
+    ]
+  ]
+  1 => array:7 [
+    0 => array:2 [
+      "periode" => "Apr'16B"
+      "frek_debet" => "B1"
+    ]
+    1 => array:2 [
+      "periode" => "Mei'16B"
+      "frek_debet" => "B24"
+    ]
+    2 => array:2 [
+      "periode" => "Jun'16B"
+      "frek_debet" => "B31"
+    ]
+    3 => array:2 [
+      "periode" => "Jul'16B"
+      "frek_debet" => "B24"
+    ]
+    4 => array:2 [
+      "periode" => "Ags'16B"
+      "frek_debet" => "B1"
+    ]
+  ]
+]
